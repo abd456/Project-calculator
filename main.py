@@ -1,6 +1,6 @@
 import time
 
-# Define the arithmetic functions
+# Defining functions
 def add(x, y):
     return x + y
 
@@ -21,7 +21,7 @@ print('Hello ' + name)
 print('One moment please....')
 time.sleep(1)
 
-# Take input from the user
+# input
 while True:
     try:
         num1 = float(input("Enter the first number: "))
@@ -30,12 +30,12 @@ while True:
     except ValueError:
         print("Oops! That was not a valid number. Please try again.")
 
-# Display the available operations
+# selecting function
 choice = input("What do you want to do with the numbers (+, -, *, /): ")
 print('Processing...')
 time.sleep(2)
 
-# Perform the selected operation and display the result
+# Process and display the result
 if choice == '+':
     print(num1, "+", num2, "=", add(num1, num2))
 elif choice == '-':
